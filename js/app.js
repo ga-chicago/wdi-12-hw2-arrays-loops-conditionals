@@ -107,6 +107,17 @@ console.log(`Thom can also wear some ${thomsCloset[1][1]} with a nice ${thomsClo
 console.log(`Thom can also wear some comfy ${thomsCloset[1][2]} with a ${thomsCloset[0][0]} shirt and some nice warm ${thomsCloset[2][0]}.`)
 
 
+//HW 3 Part 8: Dirty Laundry
+for (let i = 0; i < kristynsCloset.length; i++) {
+  console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`);
+}
+
+
+for (let i = 0; i < thomsCloset.length; i++) {
+  for (let j = 0; j < thomsCloset[i].length; j++) {
+    console.log(thomsCloset[i][j]);
+  }
+}
 
 
 
