@@ -35,16 +35,26 @@
  // why does the red dot always get away..." at random. 
 // come back too incomplete
     
-        for (let i = 1; i <= 20; i++) {
-          if (i % 2 == 0) {
-            console.log("...human...why you taking pictures of me?...");
-            } else if (i % 3 == 1) {
-              console.log("...why does the red dot always get away...");
-              } else
-                    console.log("...the catnip made me do it...");
-                        }  
+//         for (let i = 1; i <= 20; i++) {
+//           if (i % 2 == 0) {
+//             console.log("...human...why you taking pictures of me?...");
+//             } else if (i % 3 == 1) {
+//               console.log("...why does the red dot always get away...");
+//               } else
+//                     console.log("...the catnip made me do it...");
+//                         }  
 
+// Fizz Buzz
+// 1. Write a javascript application that logs all numbers from 1 - 100.
 
+      for (let i = 1; i <= 100; i++) {
+        if ((i % 5 !== 0) && (i % 3 == 1)) {
+         console.log(i + ". " + "Fizz");
+         } else if ((i % 3 !== 0) && (i % 5 == 0)) {
+          console.log(i + ". " + "Buzz");
+          } else
+            console.log(i + ". " + "FizzBuzz");
+        };
 
 
 
