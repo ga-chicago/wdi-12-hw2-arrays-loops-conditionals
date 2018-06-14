@@ -52,3 +52,66 @@
     } else {console.log(i)}
   };
 
+// GETTING TO KNOW YOU
+
+// 1.
+
+  const thom = ["Thom", 1000, "Christchurch"]
+  const karolin = ["Karolin", 16, "New York"]
+  const kristyn = ["Kristyn", 5, "Pittsburgh"]
+  const matt = ["Matt H", 186, "Philadelphia"]
+
+    const unnamed = thom.shift()
+    const renamed = thom.unshift("Gameboy")
+    karolin[1] = 17;
+    matt[2] = "Gotham City";
+    kristyn.pop();
+    kristyn.push("Brooklyn");
+
+  console.log(thom);
+  console.log(karolin);
+  console.log(kristyn);
+  console.log(matt);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
