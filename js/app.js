@@ -24,17 +24,31 @@ console.log("JavaScript is running!");
 //"...why does the red dot always get away..." at random.
 
 //Write a javascript application that logs all numbers from 1 - 100.
-for (let i = 1; i <= 100; i++){
-  console.log(i)
-    if(i % 3 === 0){
-      console.log("Fizz")
-    if(i % 5 === 0) {
-      console.log("Buzz")
-    if (i % 3 === 0 && i % 5 === 0){
-      console.log("FizzBuzz")
-    }
-    }
-    }
+// for (let i = 1; i <= 100; i++){
+//   console.log(i)
+//   if(i % 3 === 0 && i % 5 === 0){
+//       console.log(i, "FizzBuzz")
+//   if (i % 3 === 0){
+//       console.log(i, "Fizz")
+//   if(i % 5 === 0) {
+//       console.log(i, "Buzz")
+    
+//     }
+//     }
+//     }
   
-}
+// }
 
+const thom = ["Thom", 1000, "Christchurch"]
+const karolin = ["Karolin", 16, "New York"]
+const kristyn = ["Kristyn", 5, "Pittsburgh"]
+const matt = ["Matt H", 186, "Philadelphia"]
+
+thom[0] = "Gameboy"
+console.log(thom);
+karolin[1] = 17
+console.log(karolin)
+matt[2] = "Gotham City"
+console.log(matt)
+kristyn[2] = "Brooklyn"
+console.log(kristyn)
