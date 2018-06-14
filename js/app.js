@@ -59,20 +59,20 @@
   const kristyn = ["Kristyn", 5, "Pittsburgh"];
   const matt = ["Matt H", 186, "Philadelphia"];
 
-  // 1.
+// 1.
 
     const unnamed = thom.shift();
     const renamed = thom.unshift("Gameboy");
   
-  // 2.
+// 2.
 
     karolin[1] = 17;
     
-  // 3.
+// 3.
 
     matt[2] = "Gotham City";
   
-  // 4.
+// 4.
 
     kristyn.pop();
     kristyn.push("Brooklyn");
@@ -94,12 +94,64 @@
     console.log(ninjaTurtles[i].toUpperCase())
   };
 
+// RETURN OF THE CLOSETS
 
+  const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
 
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
 
+// 1.
 
+  const kristynsShoe = kristynsCloset.shift();
 
+  thomsCloset[2].push(kristynsShoe);
 
+  console.log(kristynsCloset);
+  console.log(thomsCloset);
+
+// 2.
+
+  const kristynsFirstOutfit = [kristynsCloset[0], kristynsCloset[2], kristynsCloset[3]];
+
+  const kristynsSecondOutfit = [kristynsCloset[1], thomsCloset[2][3], kristynsCloset[2], kristynsCloset[3]];
+
+  const kristynsThirdOutfit = [kristynsCloset[5], kristynsCloset[4]];
+
+  const thomsFirstOutfit = [thomsCloset[0][1], thomsCloset[1][0], thomsCloset[2][2]];
+
+  const thomsSecondOutfit = [thomsCloset[0][0], thomsCloset[1][1], thomsCloset[2][2]];
+
+  const thomsThirdOutfit = [thomsCloset[1][2], thomsCloset[2][0], thomsCloset[2][1]];
+
+  console.log(`Today, Kristyn will be wearing: ${kristynsFirstOutfit}; Thom will be wearing: ${thomsFirstOutfit}.`)
+  console.log(`Today, Kristyn will be wearing: ${kristynsSecondOutfit}; Thom will be wearing: ${thomsSecondOutfit}.`)
+  console.log(`Today, Kristyn will be wearing: ${kristynsThirdOutfit}; Thom will be wearing: ${thomsThirdOutfit}.`)
 
 
 
