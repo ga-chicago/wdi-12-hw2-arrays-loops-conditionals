@@ -75,12 +75,67 @@
 // console.log(kristyn);
 
 // Yell at the Ninja Turtles
-const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
- for (i = 0; i <= 3; i++){
-console.log(tmnt[i].toUpperCase());
-}
+// const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+//  for (i = 0; i <= 3; i++){
+// console.log(tmnt[i].toUpperCase());
+// }
 // Return of the Closets
 
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+//need more time to finish also cant think of formula so came up with the following
+
+const a = thomsCloset[0][1];
+const b = thomsCloset[0][2];
+const c = thomsCloset[0][3];
+
+const d = thomsCloset[1][0];
+const e = thomsCloset[1][1];
+const f = thomsCloset[1][2];
+
+const g = thomsCloset[2][0];
+const h = thomsCloset[2][1];
+const i = thomsCloset[2][2];
+
+// const shoe = kristynsCloset.shift()
+// thomsCloset[2].push(shoe)
+// console.log(thomsCloset);
+// console.log(kristynsCloset);
+
+console.log("Thom will be wearing " + a + " " + d + " " + g + " on monday.");
+console.log("Thom will be wearing " + b + " " + e + " " + h + " on tuesday.");
+console.log("Thom will be wearing " + i + " " + c + " " + f + " on wednesday");
+console.log("kristyn will be wearing " + a + " " + d + " " + g + " on monday.");
+console.log("kristyn will be wearing " + a + " " + d + " " + g + " on tuesday.");
+console.log("kristyn will be wearing " + a + " " + d + " " + g + " on wednesday");
 
 
 
