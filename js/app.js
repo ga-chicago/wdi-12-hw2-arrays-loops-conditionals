@@ -3,7 +3,7 @@
 // git push origin master
 //completed the assignment and completed commits
 // make pull request, go to your fork/page make new pull request and submit
-console.log("javascript is harder than it looks and it looks hard")
+// console.log("javascript is harder than it looks and it looks hard")
 
 // Easy Going
 // 1. Write a for loop that will log the numbers 1 through 20.
@@ -15,11 +15,47 @@ console.log("javascript is harder than it looks and it looks hard")
 // Get Even
 // 1. Write a for loop that will log only the even numbers in 0 through 200.
 
-  for (i = 0; i <=200; i++){
-    if (i % 2 == 0){
-      console.log(i);
-    }
-  }
+  // for (i = 0; i <=200; i++){
+  //   if (i % 2 == 0){
+  //     console.log(i);
+  //   }
+  // }
+
+// Excited Kitten
+// 1.Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
+    // const kitten = ["Love me, pet me! HSSSSSS!"];
+
+      // for (let i = 1; i <= 20; i++) {
+      //   console.log(i + ". " + "Love me, pet me! HSSSSSS!");
+      // }
+
+// 2. For every even number in your loop,
+ // log "...human...why you taking pictures of me?
+ // ...", "...the catnip made me do it...", or "...
+ // why does the red dot always get away..." at random. 
+// come back too incomplete
+    
+        for (let i = 1; i <= 20; i++) {
+          if (i % 2 == 0) {
+            console.log("...human...why you taking pictures of me?...");
+            } else if (i % 3 == 1) {
+              console.log("...why does the red dot always get away...");
+              } else
+                    console.log("...the catnip made me do it...");
+                        }  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
