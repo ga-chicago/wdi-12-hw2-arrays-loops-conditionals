@@ -41,5 +41,22 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
+//HW 3 Part 5: Getting to know you
+const thom = ["Thom", 1000, "Christchurch"]
+const karolin = ["Karolin", 16, "New York"]
+const kristyn = ["Kristyn", 5, "Pittsburgh"]
+const matt = ["Matt H", 186, "Philadelphia"]
+
+thom.shift();
+thom.unshift("Gameboy");
+karolin[1] = 17;
+matt[2] = "Gotham City";
+kristyn.pop();
+kristyn.push("Brooklyn");
+
+
+
+
+
 
 
