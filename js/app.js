@@ -62,3 +62,56 @@ for (let i = 0; i < ninjaTurtles.length; i++) {
 }
 
 
+//HW 3 Part 7: Return of the Closets
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+
+console.log(`Kristyn can wear ${kristynsCloset[0]} with ${kristynsCloset[3]} and a ${kristynsCloset[2]}.`)
+console.log(`Kristyn can also wear a ${kristynsCloset[1]} with ${kristynsCloset[3]} and ${kristynsCloset[5]}.`)
+console.log(`Kristyn can also wear ${kristynsCloset[0]} with a ${kristynsCloset[2]} and a ${kristynsCloset[4]}.`)
+
+console.log(`Thom can wear some ${thomsCloset[1][0]} with a nice ${thomsCloset[0][3]} shirt and some cool ${thomsCloset[2][2]}.`)
+console.log(`Thom can also wear some ${thomsCloset[1][1]} with a nice ${thomsCloset[0][2]} shirt and a nice warm ${thomsCloset[2][1]}.`)
+console.log(`Thom can also wear some comfy ${thomsCloset[1][2]} with a ${thomsCloset[0][0]} shirt and some nice warm ${thomsCloset[2][0]}.`)
+
+
+
+
+
+
+
+
+
+
