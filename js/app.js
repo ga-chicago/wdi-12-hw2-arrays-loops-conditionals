@@ -41,7 +41,7 @@ for (let i = 1; i <= 100; i++) {
   }
 }
 
-//HW 3 Part 5: Getting to know you
+//HW 3 Part 5: Getting to Know You
 const thom = ["Thom", 1000, "Christchurch"]
 const karolin = ["Karolin", 16, "New York"]
 const kristyn = ["Kristyn", 5, "Pittsburgh"]
@@ -54,9 +54,11 @@ matt[2] = "Gotham City";
 kristyn.pop();
 kristyn.push("Brooklyn");
 
+//HW 3 Part 6: Yell at Ninja Turtles
+ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
-
-
-
+for (let i = 0; i < ninjaTurtles.length; i++) {
+  console.log(ninjaTurtles[i].toUpperCase());
+}
 
 
