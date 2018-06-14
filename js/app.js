@@ -125,13 +125,59 @@ for (let i = 0; i < 1000; i++) {
   if ((i % 3 === 0) || (i % 5 === 0)) {
     sum = sum + i;
   }
-  
 }
 
 console.log(sum);
 
 
+//Triangles Part 0:
+const argument = 7;
+let triangle = [];
+//Triangles Part 1:
+for (let i = 0; i <= argument; i++) {
+  triangle[i] = '';
+}
 
+for (let i = 0; i < argument; i++) {
+  for (let j = 1; j <= i+1; j++) {
+    triangle[i] = triangle[i] + '#';
+  }
+}
+
+for (let i = 0; i < argument; i++) {
+  console.log(triangle[i]);
+}
+
+
+//Triangles Part 2:
+for (let i = 0; i <= argument; i++) {
+  triangle[i] = '';
+}
+
+let counter = [];
+
+for (let i = argument - 1; i >= 0; i--) {
+  counter.push(i);
+}
+
+for (let i = 0; i < argument; i++) {
+  for (let j = counter[i]-1; j >= 0; j--) {
+    triangle[i] = triangle[i] + ' ';
+  }
+}
+
+for (let i = 0; i < argument; i++) {
+  for (let j = 1; j <= i+1; j++) {
+    triangle[i] = triangle[i] + '#';
+  }
+}
+
+for (let i = 0; i < argument; i++) {
+  console.log(triangle[i]);
+}
+
+
+//Triangles Part 3: 
 
 
 
