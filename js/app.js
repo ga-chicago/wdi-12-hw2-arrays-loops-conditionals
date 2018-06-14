@@ -81,74 +81,82 @@
 // }
 // Return of the Closets
 
-const kristynsCloset = [
-  "left shoe",
-  "cowboy boots",
-  "right sock",
-  "GA hoodie",
-  "green pants",
-  "yellow knit hat",
-  "marshmallow peeps"
-];
+// const kristynsCloset = [
+//   "left shoe",
+//   "cowboy boots",
+//   "right sock",
+//   "GA hoodie",
+//   "green pants",
+//   "yellow knit hat",
+//   "marshmallow peeps"
+// ];
 
-// Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  [
-    // These are Thom's shirts
-    "grey button-up",
-    "dark grey button-up",
-    "light blue button-up",
-    "blue button-up",
-  ],[
-    // These are Thom's pants
-    "grey jeans",
-    "jeans",
-    "PJs"
-  ],[
-    // Thom's accessories
-    "wool mittens",
-    "wool scarf",
-    "raybans"
-  ]
-];
-//need more time to finish also cant think of formula so came up with the following
+// // Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   [
+//     // These are Thom's shirts
+//     "grey button-up",
+//     "dark grey button-up",
+//     "light blue button-up",
+//     "blue button-up",
+//   ],[
+//     // These are Thom's pants
+//     "grey jeans",
+//     "jeans",
+//     "PJs"
+//   ],[
+//     // Thom's accessories
+//     "wool mittens",
+//     "wool scarf",
+//     "raybans"
+//   ]
+// ];
+// //need more time to finish also cant think of formula so came up with the following
 
-// const a = thomsCloset[0][1];
-// const b = thomsCloset[0][2];
-// const c = thomsCloset[0][3];
+// // const a = thomsCloset[0][1];
+// // const b = thomsCloset[0][2];
+// // const c = thomsCloset[0][3];
 
-// const d = thomsCloset[1][0];
-// const e = thomsCloset[1][1];
-// const f = thomsCloset[1][2];
+// // const d = thomsCloset[1][0];
+// // const e = thomsCloset[1][1];
+// // const f = thomsCloset[1][2];
 
-// const g = thomsCloset[2][0];
-// const h = thomsCloset[2][1];
-// const j = thomsCloset[2][2];
+// // const g = thomsCloset[2][0];
+// // const h = thomsCloset[2][1];
+// // const j = thomsCloset[2][2];
 
-const shoe = kristynsCloset.shift()
-thomsCloset[2].push(shoe)
-// console.log(thomsCloset);
-// console.log(kristynsCloset);
+// const shoe = kristynsCloset.shift()
+// thomsCloset[2].push(shoe)
+// // console.log(thomsCloset);
+// // console.log(kristynsCloset);
 
-// console.log("Thom will be wearing " + a + " " + d + " " + g + " on monday.");
-// console.log("Thom will be wearing " + b + " " + e + " " + h + " on tuesday.");
-// console.log("Thom will be wearing " + j + " " + c + " " + f + " on wednesday");
-// console.log("kristyn will be wearing " + a + " " + d + " " + g + " on monday.");
-// console.log("kristyn will be wearing " + a + " " + d + " " + g + " on tuesday.");
-// console.log("kristyn will be wearing " + a + " " + d + " " + g + " on wednesday");
+// // console.log("Thom will be wearing " + a + " " + d + " " + g + " on monday.");
+// // console.log("Thom will be wearing " + b + " " + e + " " + h + " on tuesday.");
+// // console.log("Thom will be wearing " + j + " " + c + " " + f + " on wednesday");
+// // console.log("kristyn will be wearing " + a + " " + d + " " + g + " on monday.");
+// // console.log("kristyn will be wearing " + a + " " + d + " " + g + " on tuesday.");
+// // console.log("kristyn will be wearing " + a + " " + d + " " + g + " on wednesday");
 
-    for (i = 0; i < 6; i++){
-        console.log("WHIRR: Now washing " + kristynsCloset[i]);
- }
+//     for (i = 0; i < 6; i++){
+//         console.log("WHIRR: Now washing " + kristynsCloset[i]);
+//  }
 
-    for (i = 0; i < 4; i++){   
-      console.log("Here is a list of Thom's shirts: " 
-        + thomsCloset[0] + "." + " " + " Here is a list of Thom's shirts: " 
-        + " " + thomsCloset[1] + "." + " Here is a list of Thom's shirts: " 
-              + thomsCloset[2] + "."); 
+//     for (i = 0; i < 4; i++){   
+//       console.log("Here is a list of Thom's shirts: " 
+//         + thomsCloset[0] + "." + " " + " Here is a list of Thom's shirts: " 
+//         + " " + thomsCloset[1] + "." + " Here is a list of Thom's shirts: " 
+//               + thomsCloset[2] + "."); 
+//     }
+
+//unable to finish looked it up (numbers: 33165)
+    let numbers = 0;
+
+    for (let i = 0; i < 1000; i++) {
+      if ((i % 3 === 0) && (i % 5 === 0)) {
+        (numbers += i);
+      } 
     }
-
-
+    console.log('numbers: %d', numbers);
 
 
 
