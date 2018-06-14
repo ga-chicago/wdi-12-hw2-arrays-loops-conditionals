@@ -23,5 +23,18 @@ console.log("JavaScript is running!");
 //"...the catnip made me do it...", or 
 //"...why does the red dot always get away..." at random.
 
-
+//Write a javascript application that logs all numbers from 1 - 100.
+for (let i = 1; i <= 100; i++){
+  console.log(i)
+    if(i % 3 === 0){
+      console.log("Fizz")
+    if(i % 5 === 0) {
+      console.log("Buzz")
+    if (i % 3 === 0 && i % 5 === 0){
+      console.log("FizzBuzz")
+    }
+    }
+    }
+  
+}
 
