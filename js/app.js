@@ -14,3 +14,27 @@
     console.log (i);
   };
 
+//EXCITED KITTEN
+
+// 1.
+
+  for (let i = 1; i <= 20; i++) {
+    console.log ("Love me, pet me! HSSSSSS!");
+  };
+
+// 2.
+
+  const kittySpeak = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
+
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
+
+  for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0){
+      console.log(kittySpeak[getRandomInt(3)]);
+    } else { 
+      console.log ("Love me, pet me! HSSSSSS!");
+    }
+  };
+
