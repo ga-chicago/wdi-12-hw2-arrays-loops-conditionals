@@ -54,17 +54,26 @@
 
 // GETTING TO KNOW YOU
 
-// 1.
+  const thom = ["Thom", 1000, "Christchurch"];
+  const karolin = ["Karolin", 16, "New York"];
+  const kristyn = ["Kristyn", 5, "Pittsburgh"];
+  const matt = ["Matt H", 186, "Philadelphia"];
 
-  const thom = ["Thom", 1000, "Christchurch"]
-  const karolin = ["Karolin", 16, "New York"]
-  const kristyn = ["Kristyn", 5, "Pittsburgh"]
-  const matt = ["Matt H", 186, "Philadelphia"]
+  // 1.
 
-    const unnamed = thom.shift()
-    const renamed = thom.unshift("Gameboy")
+    const unnamed = thom.shift();
+    const renamed = thom.unshift("Gameboy");
+  
+  // 2.
+
     karolin[1] = 17;
+    
+  // 3.
+
     matt[2] = "Gotham City";
+  
+  // 4.
+
     kristyn.pop();
     kristyn.push("Brooklyn");
 
@@ -72,6 +81,18 @@
   console.log(karolin);
   console.log(kristyn);
   console.log(matt);
+
+// YELL AT THE NINJA TURTLES
+
+// 1.
+  
+  const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// 2.
+
+  for (i = 0; i < ninjaTurtles.length; i++) {
+    console.log(ninjaTurtles[i].toUpperCase())
+  };
 
 
 
