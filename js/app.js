@@ -6,7 +6,7 @@
     console.log (i);
   };
 
-//GET EVEN
+// GET EVEN
 
 // 1.
 
@@ -14,7 +14,7 @@
     console.log (i);
   };
 
-//EXCITED KITTEN
+// EXCITED KITTEN
 
 // 1.
 
@@ -36,5 +36,19 @@
     } else { 
       console.log ("Love me, pet me! HSSSSSS!");
     }
+  };
+
+// FIZZ BUZZ
+
+// 1.
+
+  for (let i = 1; i <= 100; i++) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+      console.log("FizzBuzz")
+    } else if (i % 5 === 0) {
+      console.log("Buzz")
+    } else if (i % 3 === 0) {
+      console.log("Fizz")
+    } else {console.log(i)}
   };
 
