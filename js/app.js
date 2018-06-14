@@ -58,6 +58,12 @@
 //   console.log(kristyn);
 
 
+// Section 4
+// 1.
+const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+    for(let i = 0; i <= tmnt.length; i++){
+      console.log(tmnt[i].toUpperCase([]));
+    }
 
 
 
