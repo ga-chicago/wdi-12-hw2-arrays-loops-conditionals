@@ -149,18 +149,36 @@
 //     }
 
 //unable to finish looked it up (numbers: 33165)
-    let numbers = 0;
+    // let numbers = 0;
 
-    for (let i = 0; i < 1000; i++) {
-      if ((i % 3 === 0) && (i % 5 === 0)) {
-        (numbers += i);
-      } 
+    // for (let i = 0; i < 1000; i++) {
+    //   if ((i % 3 === 0) && (i % 5 === 0)) {
+    //     (numbers += i);
+    //   } 
+    // }
+    // console.log('numbers: %d', numbers);
+
+
+// let y;
+// let x;
+// for (let x = 0; x < 8; x++) {
+//   for (y = 0; y < 10 - x; y++) {
+//     console.log(" ");
+//   } for (y = 8 - x; y <= 7; y++) {
+//     console.log("#");
+//   }
+// }
+// GAVE UP NOT ENOUGH TIME or UNDERSTANDING YET
+ for (i = 7; i > 0; i--) {
+         document.write("</br>");
+        for (j = 0; j < 8 - i; j++) {
+            document.write("&nbsp&nbsp");
+        }
+        for (j = 8 - i; j <= 7; j++) {
+
+            document.write("#");
+        }
     }
-    console.log('numbers: %d', numbers);
-
-
-
-
 
 
 
