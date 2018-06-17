@@ -10,7 +10,7 @@
 
 // 1.
 
-  for (let i = 0; i <= 200; i+=2) {
+  for (let i = 0; i <= 200; i+=2) { 
     console.log (i);
   };
 
@@ -90,7 +90,7 @@
 
 // 2.
 
-  for (i = 0; i < ninjaTurtles.length; i++) {
+  for (let i = 0; i < ninjaTurtles.length; i++) {
     console.log(ninjaTurtles[i].toUpperCase())
   };
 
@@ -152,6 +152,58 @@
   console.log(`Today, Kristyn will be wearing: ${kristynsFirstOutfit}; Thom will be wearing: ${thomsFirstOutfit}.`)
   console.log(`Today, Kristyn will be wearing: ${kristynsSecondOutfit}; Thom will be wearing: ${thomsSecondOutfit}.`)
   console.log(`Today, Kristyn will be wearing: ${kristynsThirdOutfit}; Thom will be wearing: ${thomsThirdOutfit}.`)
+
+// DIRTY LAUNDRY
+
+// 1.
+
+  for (let i = 0; i < kristynsCloset.length; i++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}`)
+  };
+
+// 2.
+
+  const r = thomsCloset[0].length;
+  const s = thomsCloset[1].length;
+  const t = thomsCloset[2].length;
+
+
+
+  for (let i = 0; i < thomsCloset.length; i++) {
+    const value = `[${i}]`;
+
+    for (let j = 0; j < r; j++) {
+      console.log(`thomsCloset[${i}][${j}]`)
+    }
+
+    for (let j = 0; j < s; j++) {
+      console.log(`thomsCloset[${i}][${j}]`)
+    }
+
+    for (let j = 0; j < t; j++) {
+      console.log(`thomsCloset[${i}][${j}]`)
+    }
+
+  };
+// i feel like its close...
+
+// MULTIPLES OF 3 & 5
+
+// 1.
+  
+  const multiples = [];
+
+  for (let i = 0; i < 1000; i++) {
+    if (i % 5 === 0 || i % 3 === 0) {
+      multiples.push(i);
+    }
+  };
+  const finalSum = multiples.reduce((a, b) => a + b, 0);
+  console.log (finalSum);
+ 
+
+
+
 
 
 
