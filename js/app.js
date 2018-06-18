@@ -200,3 +200,18 @@ for(let i = 0; i <= argument; i++) {
 	}
 	console.log(rowFour);
 }
+
+// Q5.
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+const sortedNums = nums.sort(function(a, b){return a-b});
+console.log(sortedNums);
+
+let sumNums = 0;
+for(let i = 0; i <= sortedNums.length-1; i++) {
+	sumNums += nums[i];
+}
+
+const medianNums = parseInt(sumNums/sortedNums.length);
+
+console.log(medianNums);
