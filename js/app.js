@@ -154,3 +154,49 @@ for(let i = 0; i < 1000; i++) {
 }
 
 console.log(sum);
+
+// Hungry for more?
+// Triangles
+// Q0.
+const argument = 7;
+
+// Q1.
+let rowOne = "";
+
+for(let i = 0; i <= argument; i++) {
+	rowOne += "#";
+	console.log(rowOne);
+}
+
+// Q2.
+for(let i = 0; i <= argument; i++) {
+	let rowTwo = "";
+	for(let j = 0; j <= argument-1-i; j++) {
+		rowTwo += " ";
+	}
+	for(let k = 0; k <= i; k++) {
+		rowTwo += "#";
+	}
+	console.log(rowTwo);
+}
+
+// Q3.
+for(let i = 0; i <= argument; i++) {
+	let rowThree = "";
+	for(let j = 0; j <= argument-i; j++) {
+		rowThree += "#";
+	}
+	console.log(rowThree);
+}
+
+//Q4.
+for(let i = 0; i <= argument; i++) {
+	let rowFour = "";
+	for(let j = 0; j <= i-1; j++) {
+		rowFour += " ";
+	}
+	for(let k = 0; k <= argument-i; k++) {
+		rowFour += "#";
+	}
+	console.log(rowFour);
+}
