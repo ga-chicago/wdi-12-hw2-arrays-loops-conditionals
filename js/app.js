@@ -61,3 +61,13 @@ matt[2] = "Gothem City"
 // Q4.
 kristyn.pop("Pittzburgh");
 kristyn.push("Brooklyn");
+
+// Yell at the Ninja Turtles
+// Q1.
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+// Q2.
+for(let i = 0; i <= ninjaTurtles.length-1; i ++) {
+	ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
+	console.log(ninjaTurtles[i]);
+}
