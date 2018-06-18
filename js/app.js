@@ -71,3 +71,54 @@ for(let i = 0; i <= ninjaTurtles.length-1; i ++) {
 	ninjaTurtles[i] = ninjaTurtles[i].toUpperCase();
 	console.log(ninjaTurtles[i]);
 }
+
+// Return of the Closets
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Alien Attire
+// Q1.
+let kristynShoe = [kristynsCloset.splice(0, 1)];
+thomsCloset[2].push(kristynShoe.splice(0,1) + "");
+
+console.log(kristynShoe);
+console.log(thomsCloset);
+// Dress Us Up
+// Q2.
+
+let outfitOne = kristynsCloset.splice(0,4);
+console.log("Kristyn's outfit will be " + outfitOne[0] + ", " + outfitOne[1] + ", " + outfitOne[2] + ", and " + outfitOne[3] + ".");
+
+let outfitTwo = [thomsCloset[0].splice(0,1), thomsCloset[1].splice(0,1), thomsCloset[2].splice(0,1)];
+console.log("Thom's first outfit will be " + outfitTwo[0] + ", " + outfitTwo[1] + ", and " + outfitTwo[2] + ".");
+
+let outfitThree = [thomsCloset[0].splice(0,1), thomsCloset[1].splice(0,1), thomsCloset[2].splice(0,1)];
+console.log("Thom's second outfit will be " + outfitThree[0] + ", " + outfitThree[1] + ", and " + outfitThree[2] + ".");
