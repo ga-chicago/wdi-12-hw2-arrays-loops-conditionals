@@ -42,3 +42,22 @@ for(let i = 1; i <= 100; i++) {
 		console.log(i);
 	}
 }
+
+// Getting to Know You
+// Q1.
+const thom = ["Thom", 1000, "Christchurch"]
+const karolin = ["Karolin", 16, "New York"]
+const kristyn = ["Kristyn", 5, "Pittsburgh"]
+const matt = ["Matt H", 186, "Philadelphia"]
+
+thom[0] = "Gameboy"
+
+// Q2.
+karolin[1] += 1;
+
+// Q3.
+matt[2] = "Gothem City"
+
+// Q4.
+kristyn.pop("Pittzburgh");
+kristyn.push("Brooklyn");
