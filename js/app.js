@@ -114,11 +114,32 @@ console.log(thomsCloset);
 // Dress Us Up
 // Q2.
 
-let outfitOne = kristynsCloset.splice(0,4);
+let outfitOne = kristynsCloset;
 console.log("Kristyn's outfit will be " + outfitOne[0] + ", " + outfitOne[1] + ", " + outfitOne[2] + ", and " + outfitOne[3] + ".");
 
-let outfitTwo = [thomsCloset[0].splice(0,1), thomsCloset[1].splice(0,1), thomsCloset[2].splice(0,1)];
+let outfitTwo = [thomsCloset[0].slice(0,1), thomsCloset[1].slice(0,1), thomsCloset[2].slice(0,1)];
 console.log("Thom's first outfit will be " + outfitTwo[0] + ", " + outfitTwo[1] + ", and " + outfitTwo[2] + ".");
 
-let outfitThree = [thomsCloset[0].splice(0,1), thomsCloset[1].splice(0,1), thomsCloset[2].splice(0,1)];
+let outfitThree = [thomsCloset[0].slice(1,2), thomsCloset[1].slice(1,2), thomsCloset[2].slice(1,2)];
 console.log("Thom's second outfit will be " + outfitThree[0] + ", " + outfitThree[1] + ", and " + outfitThree[2] + ".");
+
+// Dirty Laundy
+// Q1.
+for(let i = 0; i <= kristynsCloset.length-1; i++) {
+	console.log("WHIRR: Now washing " + kristynsCloset[i] + ".");
+}
+
+// Q2.
+// Thom's Shirts
+for(let i = 0; i <= thomsCloset[0].length-1; i++) {
+	console.log("Thom has " + thomsCloset[0][i] + " in his shirt closet.");
+}
+// Thom's Pants
+for(let i = 0; i <= thomsCloset[1].length-1; i++) {
+	console.log("Thom has " + thomsCloset[1][i] + " in his pants drawer.");
+}
+
+// Thom's Accessories
+for(let i = 0; i <= thomsCloset[2].length-1; i++) {
+	console.log("Thom has " + thomsCloset[2][i] + " in his accessorie drawer.");
+}
