@@ -3,14 +3,14 @@
 //   console.log(i);
 // }
 
-// // Write a loop that will only log even numbers from 0-200
+// Write a loop that will only log even numbers from 0-200
 // for (let i = 0; i < 201; i++){
 //   if(i % 2 === 0){
 //     console.log((i));
 //   };
 // }
 
-// // Excited Kittens
+// Excited Kittens
 // for (let i = 0; i <= 20; i++){
 //   if(i < 20) {
 //     console.log("Love me, pet me! HSSSSSS!")
@@ -48,8 +48,34 @@
 // kristyn[2] = "Brooklyn";
 
 
-// //Yell At the Ninja Turtles
-const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
-for (i = 0; i < turtles.length; i++) {
-  console.log(turtles[i].toUpperCase());
-}
+//  Yell At the Ninja Turtles
+//  const turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+//   for (i = 0; i < turtles.length; i++) {
+//    console.log(turtles[i].toUpperCase());
+//  }
+
+
+//  Return of the Closets
+const kristynsCloset = ["left shoe", "cowboy boots", "right sock", "GA hoodie", "green pants", "yellow knit hat", "marshmallow peeps"];
+//  Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  // These are Thom's shirts
+  ["grey button-up", "dark grey button-up", "light blue button-up", "blue button-up"],
+
+  // These are Thom's pants
+  ["grey jeans", "jeans", "PJs"],
+
+  // Thom's accessories
+  ["wool mittens", "wool scarf", "raybans"]];
+
+
+//  Alien Attire
+const kristynsShoe = kristynsCloset.splice(0, 1);
+
+thomsCloset[2].push(kristynsShoe[0]);       //  adds variable kristynsShoe to Thom's accessories array
+console.log(thomsCloset);                   //  logging thomsCloset to double check successful change
+
+//Dress Up
+console.log("Today Kristyn will wear " + kristynsCloset[1] + ", " + kristynsCloset[2] + ", and " + kristynsCloset[3] + ".")       //These expressions reach inside of the array using index numbers to post the proper attire.
+console.log("Tomorrow Kristyn will wear "  + kristynsCloset[2] + ", " + kristynsCloset[5] + ", and " + kristynsCloset[1] + ".")
+console.log("Yesterda Kristyn wore "  + kristynsCloset[3] + ", " + kristynsCloset[4] + ", and " + kristynsCloset[5] + ".")
