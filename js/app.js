@@ -56,17 +56,17 @@
 
 
 //  Return of the Closets
-const kristynsCloset = ["left shoe", "cowboy boots", "right sock", "GA hoodie", "green pants", "yellow knit hat", "marshmallow peeps"];
-//  Thom's closet is more complicated. Check out this nested data structure!!
-const thomsCloset = [
-  // These are Thom's shirts
-  ["grey button-up", "dark grey button-up", "light blue button-up", "blue button-up"],
-
-  // These are Thom's pants
-  ["grey jeans", "jeans", "PJs"],
-
-  // Thom's accessories
-  ["wool mittens", "wool scarf", "raybans"]];
+// const kristynsCloset = ["left shoe", "cowboy boots", "right sock", "GA hoodie", "green pants", "yellow knit hat", "marshmallow peeps"];
+// //  Thom's closet is more complicated. Check out this nested data structure!!
+// const thomsCloset = [
+//   // These are Thom's shirts
+//   ["grey button-up", "dark grey button-up", "light blue button-up", "blue button-up"],
+//
+//   // These are Thom's pants
+//   ["grey jeans", "jeans", "PJs"],
+//
+//   // Thom's accessories
+//   ["wool mittens", "wool scarf", "raybans"]];
 
 
 // //  Alien Attire
@@ -81,12 +81,28 @@ const thomsCloset = [
 // console.log("Yesterda Kristyn wore "  + kristynsCloset[3] + ", " + kristynsCloset[4] + ", and " + kristynsCloset[5] + ".")
 
 
-// Dirty Laundry
-for (let i = 0; i < kristynsCloset.length; i++) {         //  This for loop iterates over the closet array
-console.log("WHIRR: Now washing " + kristynsCloset[i]);   //  This console logs it. Squeaky clean!
-}
+// // Dirty Laundry
+// for (let i = 0; i < kristynsCloset.length; i++) {         //  This for loop iterates over the closet array
+// console.log("WHIRR: Now washing " + kristynsCloset[i]);   //  This console logs it. Squeaky clean!
+// }
+//
+// //  Inventory
+// for (let i = 0; i < thomsCloset.length; i++) {            //  This for loop iterates over the entire closet
+//   console.log(thomsCloset[i]);                            //  This logs them arrays, i here lists the contents
+// }
 
-//  Inventory
-for (let i = 0; i < thomsCloset.length; i++) {            //  This for loop iterates over the entire closet
-  console.log(thomsCloset[i]);                            //  This logs them arrays, i here lists the contents
+//  Multiples of 3 and 5
+let somethingA = 0    //defining variables for math
+let somethingB = 0
+let sum = 0
+
+for (let i = 0; i < 1000; i++) {  //for loop for counting through to 1000
+  if (i % 3 === 0){
+    (somethingA += i)             //These % operations find if the number is divisible
+  }                               //They += keeps the number counting up
+  if (i % 5 === 0){
+    (somethingB += i)
+  }
 }
+sum = somethingA + somethingB    //Adds everything up
+  console.log(sum);
