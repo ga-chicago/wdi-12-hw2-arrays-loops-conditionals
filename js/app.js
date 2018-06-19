@@ -69,13 +69,24 @@ const thomsCloset = [
   ["wool mittens", "wool scarf", "raybans"]];
 
 
-//  Alien Attire
-const kristynsShoe = kristynsCloset.splice(0, 1);
+// //  Alien Attire
+// const kristynsShoe = kristynsCloset.splice(0, 1);
+//
+// thomsCloset[2].push(kristynsShoe[0]);       //  adds variable kristynsShoe to Thom's accessories array
+// console.log(thomsCloset);                   //  logging thomsCloset to double check successful change
+//
+// //Dress Up
+// console.log("Today Kristyn will wear " + kristynsCloset[1] + ", " + kristynsCloset[2] + ", and " + kristynsCloset[3] + ".")       //These expressions reach inside of the array using index numbers to post the proper attire.
+// console.log("Tomorrow Kristyn will wear "  + kristynsCloset[2] + ", " + kristynsCloset[5] + ", and " + kristynsCloset[1] + ".")
+// console.log("Yesterda Kristyn wore "  + kristynsCloset[3] + ", " + kristynsCloset[4] + ", and " + kristynsCloset[5] + ".")
 
-thomsCloset[2].push(kristynsShoe[0]);       //  adds variable kristynsShoe to Thom's accessories array
-console.log(thomsCloset);                   //  logging thomsCloset to double check successful change
 
-//Dress Up
-console.log("Today Kristyn will wear " + kristynsCloset[1] + ", " + kristynsCloset[2] + ", and " + kristynsCloset[3] + ".")       //These expressions reach inside of the array using index numbers to post the proper attire.
-console.log("Tomorrow Kristyn will wear "  + kristynsCloset[2] + ", " + kristynsCloset[5] + ", and " + kristynsCloset[1] + ".")
-console.log("Yesterda Kristyn wore "  + kristynsCloset[3] + ", " + kristynsCloset[4] + ", and " + kristynsCloset[5] + ".")
+// Dirty Laundry
+for (let i = 0; i < kristynsCloset.length; i++) {         //  This for loop iterates over the closet array
+console.log("WHIRR: Now washing " + kristynsCloset[i]);   //  This console logs it. Squeaky clean!
+}
+
+//  Inventory
+for (let i = 0; i < thomsCloset.length; i++) {            //  This for loop iterates over the entire closet
+  console.log(thomsCloset[i]);                            //  This logs them arrays, i here lists the contents
+}
