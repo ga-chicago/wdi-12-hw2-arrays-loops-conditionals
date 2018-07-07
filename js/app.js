@@ -17,14 +17,31 @@ for(let i = 0; i < 20; i++){
 }
 
 // 2.
-for(let i = 0; i < 20; i++){
-  if(i % 2 === 0){ 
-    console.log("...human...why you taking pictures of me?..");
-    console.log("...the catnip made me do it..");
-    console.log("why does the red dot always get away"); 
-    Math.random(i);
-  }
+// initial attempt
+// for(let i = 0; i < 20; i++){
+//   if(i % 2 === 0){ 
+//     console.log("...human...why you taking pictures of me?..");
+//     console.log("...the catnip made me do it..");
+//     console.log("why does the red dot always get away"); 
+//     Math.random(i);
+//   }
+// }
+
+// correct answer
+const phrases = [
+  "...human...why you taking pictures of me?..",
+  "...the catnip made me do it..",
+  "why does the red dot always get away"
+];
+
+for(let i = 0; i < 20; i++) {
+  const decimalUnder3 = 3 * Math.random();
+  const justTheInt = Math.floor(decimalUnder3);
+  console.log(phrases[justTheInt]);
 }
+
+console.log(phrases[3]);
+
 
 // Section 3
 // 1. 
@@ -60,10 +77,10 @@ const matt = ["Matt H", 186, "Philadelphia"]
 
 // Section 4
 // 1.
-const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
-    for(let i = 0; i <= tmnt.length; i++){
-      console.log(tmnt[i].toUpperCase([]));
-    }
+// const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+//     for(let i = 0; i <= tmnt.length; i++){
+//       console.log(tmnt[i].toUpperCase([]));
+//     }
 
 // Section 5
 // 1.
@@ -98,10 +115,29 @@ const thomsCloset = [
   ]
 ];
 
-kristynsCloset.pull("left shoe");
+kristynsCloset.shift();
 const kristynsShoe = "left shoe";
-pairs[2].push("left shoe");
+thomsCloset[2].push("left shoe");
 console.log([thomsCloset]);
+
+const kristynOutfits = [
+   ["left shoe", "marshmallow peeps"],
+   ["cowboy boots", "green pants", "yellow knit hat"], 
+   ["GA hoodie", "right sock"]];
+   console.log("Kristyn is wearing " + kristynOutfits[0]);
+
+const thomOutfits = [
+  ["grey button-up", "grey jeans", "wool mittens"],
+  ["dark grey button-up", "jeans", "wool scarf"],
+  ["light blue button-up", "PJs", "raybans"]];
+  console.log("Thom is wearing " + thomOutfits[1]);
+
+console.log("WHIRR: now washing " + kristynsCloset);
+
+console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2]);
+
+
+
 
 
 
