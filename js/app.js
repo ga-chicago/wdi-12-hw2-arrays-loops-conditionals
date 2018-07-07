@@ -58,7 +58,7 @@ for(let i = 1; i <= 100; i++){
       console.log("fizzbuzz");
     }
 
-// Section 4
+// Section 5
 // 1.
 const thom = ["Thom", 1000, "Christchurch"]
 const karolin = ["Karolin", 16, "New York"]
@@ -75,14 +75,14 @@ const matt = ["Matt H", 186, "Philadelphia"]
   console.log(kristyn);
 
 
-// Section 4
+// Section 6
 // 1.
 // const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 //     for(let i = 0; i <= tmnt.length; i++){
 //       console.log(tmnt[i].toUpperCase([]));
 //     }
 
-// Section 5
+// Sections 7 and 8
 // 1.
 const kristynsCloset = [
   "left shoe",
@@ -136,6 +136,15 @@ console.log("WHIRR: now washing " + kristynsCloset);
 
 console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2]);
 
+
+// Section 9
+let sum = 0;
+for(let i = 0; i < 1000; i++){
+  if(i % 3 === 0 || i % 5 === 0){
+    sum += i
+  }
+};
+console.log(`${sum}`);
 
 
 
